@@ -15,9 +15,4 @@ function toggleMode() {
     image.setAttribute('src', './assets/d1as-dark.png')
     image.setAttribute('alt', "Foto de Eduardo Dias sorrindo, usando camiseta preta (Modo Dark).")
   }
-  
- 
-  
-
-
 }

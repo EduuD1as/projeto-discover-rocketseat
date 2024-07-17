@@ -12,7 +12,7 @@
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(255, 255, 255, 0.2);
   --switch-bg-url: url(./assets/MoonStars.svg);
-} 
+}
 
 .light {
   --text-color: black;
@@ -24,22 +24,13 @@
   --switch-bg-url: url(./assets/Sun.svg);
 }
 
-body  {
-  /*
-  background-image: url(./assets/bg-mobile.jpg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-  */
-
-  /* background: color image repeat position/size*/
+body {
   background: var(--bg-url) no-repeat top center/cover;
-
-  
+  height: 100vh;
 }
 
 body * {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: var(--text-color);
 }
 
@@ -47,7 +38,7 @@ body * {
   width: 100%;
   max-width: 588px;
   margin: 56px auto 0px;
-  padding: 0 24px;  
+  padding: 0 24px;
 }
 
 /* profile */
@@ -64,7 +55,7 @@ body * {
 }
 
 /* switch */
-#switch button{
+#switch button {
   width: 32px;
   height: 32px;
   background: white var(--switch-bg-url) no-repeat center;
@@ -92,7 +83,6 @@ body * {
   backdrop-filter: blur (4px);
   -webkit-backdrop-filter: blur (4px);
   border-radius: 9999px;
-
 }
 
 #profile img {
@@ -118,7 +108,7 @@ ul {
   padding: 24px 0;
 }
 
-ul li a{
+ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -140,7 +130,7 @@ ul li a{
 /* pseudo-selector */
 ul li a:hover {
   background: var(--surface-color-hover);
-  border: 1.5px solid var(--text-color)
+  border: 1.5px solid var(--text-color);
 }
 
 /* socia links */
@@ -173,4 +163,13 @@ footer {
   font-size: 14px;
 }
 
+/* media queries */
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
 
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
+}
